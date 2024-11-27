@@ -1,7 +1,7 @@
 import "./profile.css"
 const Profile =()=>{
     return (
-        <div class="container">
+        <div class="container-profile">
         <h1>เลือกผู้ชม</h1>
         <div class="profiles">
             <div class="profile">

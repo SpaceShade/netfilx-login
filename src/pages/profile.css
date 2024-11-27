@@ -1,5 +1,5 @@
 
-body {
+/* body {
     
     margin: 0;
     font-family: Arial, sans-serif;
@@ -8,9 +8,10 @@ body {
     display: flex;
     justify-content: center;
     height: 100vh;
-}
+} */
 
-.container {
+.container-profile {
+    background-color: #000;
     text-align: center;
 }
 
