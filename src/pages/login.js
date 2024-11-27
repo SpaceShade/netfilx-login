@@ -1,7 +1,12 @@
 import React from 'react';
 import "./login.css";
-
-function Login() {
+import translate from"../assests/translate.png"
+import { useNavigate } from 'react-router-dom';
+const Login =()=>{
+  const navigate = useNavigate();
+  const handleLoginClick = () => {
+    navigate('./profile');
+  };
   return (
     <div className="bg" style={{backgroundImage: 'url("https://1.bp.blogspot.com/-7SccmKdnfXg/YE2xPTgsP_I/AAAAAAAAABk/Zk-RCXqlA7wlK5kYrBth0MnKCffyuDV1gCLcBGAsYHQ/s2000/neflixtv.jpg")', 
         backgroundSize: "100%",
@@ -17,7 +22,7 @@ function Login() {
                 <div className='input-group'></div>
                 <input type="text" placeholder="อีเมลหรือหมายเลขโทรศัพท์มือถือ"/>
                 <input type="password" placeholder="รหัสผ่าน"/>
-                <button className="login-btn" >
+                <button className="login-btn" onClick={handleLoginClick}>
                 เข้าสู่ระบบ
                 </button>
                 <h3 className="h3">หรือ</h3>
@@ -43,21 +48,41 @@ function Login() {
             </h5>
             </div>
         </div>
-        <div className='footer'>
-            <div className='footer-head-text'>
-            <h3>หากมีคำถาม โทร 1-800-012-294</h3>
+        <div className="footer">
+            <div className="footer-head-text">
+              <h3>หากมีคำถาม โทร 1-800-012-294</h3>
             </div>
-            <div className='footer-text'>
-            <h5>คำถามที่พบบ่อย</h5>
-            <h5>ศูนย์ช่วยเหลือ</h5>
-            <h5>ข้อกำหนดการใช้งาน</h5>
-            <h5>ความเป็นส่วนตัว</h5>
-            <h5>การตั้งค่าคุกกี้</h5>
-            <h5>ข้อมูลบริษัท</h5>
+            <div className="footer-links">
+              <div>
+                <a href="/">คำถามที่พบบ่อย</a>
+              </div>
+              <div>
+                <a href="/">ศูนย์ช่วยเหลือ</a>
+              </div>
+              <div>
+                <a href="/">ข้อกำหนดการใช้งาน</a>
+              </div>
+              <div>
+                <a href="/">ความเป็นส่วนตัว</a>
+              </div>
+              <div>
+                <a href="/">การตั้งค่าคุกกี้</a>
+              </div>
+              <div>
+                <a href="/">ข้อมูลบริษัท</a>
+              </div>
             </div>
-        </div>
+                <div className="footer-language">
+                
+                  <select>
+                  <img src={translate} alt="translate"  />
+                    <option value="th">ไทย</option>
+                    <option value="en">English</option>
+                  </select>
+                </div>
+          </div>
     </div>
   )
 }
 
-export default Login
+export default Login;
