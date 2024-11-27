@@ -1,21 +1,17 @@
-
-/* body {
-    
+.container-profile {
+    text-align: center;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #000;
-    color: #fff;
-    display: flex;
+    
     justify-content: center;
     height: 100vh;
-} */
-
-.container-profile {
-    background-color: #000;
-    text-align: center;
 }
 
-h1 {
+.h1-profile {
+    color: #fff;
+    padding-top: 190px;
+    text-align: center;
     font-size: 48px;
     margin-bottom: 50px;
 }
@@ -23,23 +19,29 @@ h1 {
 .profiles {
     display: flex;
     justify-content: center;
-    gap: 95px;
+    gap: 85px;
     margin-bottom: 20px;
 }
 
 .profile {
     text-align: center;
     width: 100px;
+    color: gray;
+}
+.profile:hover{
+    color: white;
 }
 
 .profile-icon {
     width: 150px;
     height: 150px;
     border-radius: 5px;
-    margin: 0 auto 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.profile-icon:hover{
+    border: 2px solid white;
 }
 
 .profile-icon.blue {
@@ -87,6 +89,7 @@ p {
 }
 
 .manage-button:hover {
-    background-color: #444;
+    border: 1px solid white;
+    color: white;
 }
 

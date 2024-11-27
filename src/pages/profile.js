@@ -2,7 +2,7 @@ import "./profile.css"
 const Profile =()=>{
     return (
         <div class="container-profile">
-        <h1>เลือกผู้ชม</h1>
+        <h1 className="h1-profile">เลือกผู้ชม</h1>
         <div class="profiles">
             <div class="profile">
                 <div class="profile-icon blue"></div>
