@@ -116,14 +116,11 @@ nav ul li a:hover {
     width: 100%;
     
 }
-.animetion{
+.slide-card{
     margin-left: 60px;
     font-size: 10px;
 }
-.animetion-card{
-   
-}
-.animetion-card img{
+.card img{
   height: auto;
   width: 230px;
   margin-right: 7px;
@@ -132,8 +129,14 @@ nav ul li a:hover {
 }
 .main-h1{
     position: absolute;
-    top: 700px;
+    top: 680px;
     color: #fff;
     font-size: 20px;
     margin-left: 60px;
+}
+.nav-icons img.arrow {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: 10px; 
 }

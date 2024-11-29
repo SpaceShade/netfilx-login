@@ -80,8 +80,8 @@ const Main = () => {
         <h1 className="main-h1">อนิเมชั่นฝรั่ง</h1>
       </div>
       <div className="card-container">
-          <div className="animetion">
-              <div className="animetion-card">
+          <div className="slide-card">
+              <div className="card">
                 <img src='https://images.tv.osn.com/colossus/images/series/1259165556/landscapewithtitle/1259165556_LTT.jpg' alt="card"/>
                 <img src='https://occ-0-2301-116.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABaPdShOnlX-pnA3fPeycYjwxx2lkpiZIpzAQDtlDqPv6fwlorYenD9D5EL1_jJl3kRLWNC2Df7llwAkAMqPLC9Lln9ffLwXwYCUF.jpg?r=a1d' alt="card"/>
                 <img src='https://www.nflix.pl/wp-content/uploads/2018/03/netflix-Minions-bg1-1.jpg' alt="card"/>
@@ -97,7 +97,7 @@ const Main = () => {
                 <img src='https://th.bing.com/th/id/R.6ca8ae543e7ddfb9bd9c8f2aa39a7084?rik=HEeAOFLis14suQ&pid=ImgRaw&r=0' alt="card"/> */}
               </div>
                 <h1>ใหม่ที่ Netflix</h1>
-                <div className="animetion-card">
+                <div className="card">
                 <img src='https://i-viaplay-com.akamaized.net/viaplay-prod/966/204/1682666628-41ef7c2f4f5a8121adb8e23e51ff1901f49ee206.jpg?width=448&height=252' alt="card"/>
                 <img src='https://images-na.ssl-images-amazon.com/images/S/pv-target-images/6c4976e6339450fc877d3af45bf313c5d56a0f9b3d88ae16eb6be22b46b26157._UR1920,1080_RI_SX356_FMjpg_.jpg' alt="card"/>
                 <img src='https://digitalt.tv/wp-content/uploads/imports/Tex-Mex-Motors.jpg' alt="card"/>
