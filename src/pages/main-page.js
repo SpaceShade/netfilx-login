@@ -1,10 +1,28 @@
 import "./main-page.css";
 import search from "../assests/search.png";
 import noti from "../assests/notification.png";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import arrow from "../assests/arrow-down.png";
 
 const Main = () => {
+  const [slideIndex, setSlideIndex] = useState(0); // For slides
+  const [isPopupVisible, setIsPopupVisible] = useState(false); // For the popup visibility
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSlideIndex((prevIndex) => (prevIndex + 1) % 6); // Automatically change slide every 5 seconds
+    }, 5000);
+    return () => clearInterval(interval); // Clear the interval on component unmount
+  }, []);
+
+  const changeSlide = (n) => {
+    setSlideIndex((prevIndex) => (prevIndex + n + 6) % 6); // Navigate slides
+  };
+
+  const togglePopup = () => {
+    setIsPopupVisible((prevVisible) => !prevVisible); // Toggle popup visibility
+  };
+
   useEffect(() => {
     const navbar = document.querySelector(".navbar");
 
@@ -68,7 +86,30 @@ const Main = () => {
              style={{
               height: "30px", width: "30px"
             }}/>
-            <img src={arrow} alt="Arrow Icon" className="arrow"/>
+             <div className="popup-container">
+              <img
+                src={arrow}
+                alt="Arrow Icon"
+                className="arrow"
+                onClick={togglePopup} 
+                style={{ cursor: "pointer" }}
+              />
+              {isPopupVisible && (
+                <div className="popup">
+                  <ul>
+                    <a href="/">Name2</a>
+                    <a href="/">Name3</a>
+                    <a href="/">Name4</a>
+                    <a href="/">Name5</a>
+                    <a href="/">จัดการโปรไฟล์</a>
+                    <a href="/">ย้ายโปรไฟล์</a>
+                    <a href="/">บัญชี</a>
+                    <a href="/">ศูนย์ช่วยเหลือ</a>
+                    <a href="/">ออกจากระบบ</a>
+                  </ul>
+                </div>
+              )}
+            </div>
           </div>
         </div>
         <div className="info-section">
